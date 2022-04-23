@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/styles/output.css" />
+  <title>Smart Slefie | Smile Detection</title>
+</head>
+
+<body class="font-serif text-gray-700 bg-gray-100">
+  <div class="lg:grid lg:grid-cols-2 lg:gap-16 min-h-screen">
+    <div>
+      <img src="../static/images/smile.jpg" alt="">
+    </div>
+    <div class="custom-container">
+      <h1 class="text-5xl mt-6 font-bold capitalize">Smile selfie</h1>
+      <p class="mt-2 text-xl font-light">Capture Selfie just by smiling </p>
+      <a href="/"><button class="mt-6 px-6 py-3 bg-gray-700 text-gray-50 rounded-md text-lg">Home Page</button></a><br>
+      <a href="/smile.html"><button class="my-2 px-6 py-3 bg-gray-700 text-gray-50 rounded-md text-lg">Restart</button></a>
+      <div style="text-align: center">
+        <img src="{{ url_for('Video') }}" width="80%" />
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
